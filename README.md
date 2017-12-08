@@ -48,6 +48,7 @@ Server Side için: c# ve Microsoft WebApi (Session desteği ile)
 Database : MSSql (en yakın Oracle db, ancak linq desteği olması ve microsoft ürünleri arası uyumluluk tercih sebebi)
 
 Uygulama içerikleri:
+
     Yönetim Paneli 
         1- çoklu rolleri destekleyen kullanıcı yapısı olmalıdır. 
             a- eğitici/öğrenci durumları gözlemle ve raporlama
@@ -56,15 +57,19 @@ Uygulama içerikleri:
             d- katsayılar ve oranların belirlendiği bir sistem yönetimi
         2- rollere bağlı içeriklerin yönetilmesi için configurasyonlar yapılmalı
         3- clientların istekleri ve bilgileri izlenebilmeli
+
     Client lar 
         1- push düşmeden öğrenciye eski soru ve cevaplarının gösterilmesi
         2- "+" larının durumunu ve genel sıralamadaki ortalama yerinin gösterimi
         3- yeni soru isteme
         4- push düşen soruyu cevaplama
+
     Servis tarafı ise 
         1- Mobil client lar için takip sistemi
         2- tüm istemcilere isteklerini cevabının sunulması (Mobil Client, Panel, Servis)
+        
 NOT:  kaynak kodun derlenebilmesi için aşağıdaki kurulama ihtiyaç var 
+
     npm i react-navigation
 
 
