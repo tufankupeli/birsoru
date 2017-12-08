@@ -15,35 +15,35 @@
 
 Uygulama çözümlemesi: (Uygulamanın büyüklüğü ve kullanıcı sayısı için ortalama olarak bir il içi kullanıcı sayısı)
 
-Başlangıçta sistemin 4 ksımı olması planlanabilir(Sonraki süreçlerde sistem yoğunluğu ve ihtiyaçlara göre bu ayrıştırma artabilir):
-    1- Client (Mobil cihaz öğrenci + eğitimci)
-    2- Client (Yönetim Paneli Arayüzü + raporlama tool ları)
-    3- Sürekli çalışan ve belirli/belirsiz aralık ve zamanlarda push tetikleyen sistem
-    4- MiddleWare (WebApi + controller katmanı) (Client lara servis desteği sunar)
+    Başlangıçta sistemin 4 ksımı olması planlanabilir(Sonraki süreçlerde sistem yoğunluğu ve ihtiyaçlara göre bu ayrıştırma artabilir):
+        1- Client (Mobil cihaz öğrenci + eğitimci)
+        2- Client (Yönetim Paneli Arayüzü + raporlama tool ları)
+        3- Sürekli çalışan ve belirli/belirsiz aralık ve zamanlarda push tetikleyen sistem
+        4- MiddleWare (WebApi + controller katmanı) (Client lara servis desteği sunar)
 
-Client uygulamalarının yazımı için : React - Native (Mobil cihazlar) 
-    1- İçeriğin sadeliği
-    2- Çok özel bir component yapısının kullanılmaması
-    3- Hem Ios hem  Android desteğinin olması
-    4- Code Push özelliği ile anlık deploy yapılabilmesi
+    Client uygulamalarının yazımı için : React - Native (Mobil cihazlar) 
+        1- İçeriğin sadeliği
+        2- Çok özel bir component yapısının kullanılmaması
+        3- Hem Ios hem  Android desteğinin olması
+        4- Code Push özelliği ile anlık deploy yapılabilmesi
 
- Client Yönetim paneli : Asp.Net 
-    1- Gerekli durumlarda serverside için kullanılan kütüphanelerin ortak kullanılabilmesi
-    2- Kullanılabilirlik,hızlı geliştirme ve düzenleme ortamı
-    3- Ürün uyumluluğu
+    Client Yönetim paneli : Asp.Net 
+        1- Gerekli durumlarda serverside için kullanılan kütüphanelerin ortak kullanılabilmesi
+        2- Kullanılabilirlik,hızlı geliştirme ve düzenleme ortamı
+        3- Ürün uyumluluğu
 
-Sürekli çalışan tetikleyici : c# 
-    1- Gerekli durumlarda serverside için kullanılan kütüphanelerin ortak kullanılabilmesi
-    2- Kullanılabilirlik,hızlı geliştirme ve düzenleme ortamı
-    3- Ürün uyumluluğu
-    4- Firebase için event tracker modullerinin hazır sunulması
+    Sürekli çalışan tetikleyici : c# 
+        1- Gerekli durumlarda serverside için kullanılan kütüphanelerin ortak kullanılabilmesi
+        2- Kullanılabilirlik,hızlı geliştirme ve düzenleme ortamı
+        3- Ürün uyumluluğu
+        4- Firebase için event tracker modullerinin hazır sunulması
 
-Server Side için: c# ve Microsoft WebApi (Session desteği ile)
-    1- REST desteği ile platform bağımsız çağrılabilir (neden webapi)
-    2- Session desteği ile sadece tokenbased auth yerine session controlled operasyon yapılabilir
-    3- Session desteği ile client a gerekli yeterli bilgi dönerek client bussiness ortadan kaldırlır.
-    4- sadece client olarak uygulamaları değil aynı zamanda http get put post desteği ile browser isteklerine de cevap verebilir.
-    5- Neden c# ve microsoft, kullanılabilirliğinin ve comminity desteğinin olması ve hızlı geliştirilebilir bir ortam sunması.
+    Server Side için: c# ve Microsoft WebApi (Session desteği ile)
+        1- REST desteği ile platform bağımsız çağrılabilir (neden webapi)
+        2- Session desteği ile sadece tokenbased auth yerine session controlled operasyon yapılabilir
+        3- Session desteği ile client a gerekli yeterli bilgi dönerek client bussiness ortadan kaldırlır.
+        4- sadece client olarak uygulamaları değil aynı zamanda http get put post desteği ile browser isteklerine de cevap verebilir.
+        5- Neden c# ve microsoft, kullanılabilirliğinin ve comminity desteğinin olması ve hızlı geliştirilebilir bir ortam sunması.
 
 Database : MSSql (en yakın Oracle db, ancak linq desteği olması ve microsoft ürünleri arası uyumluluk tercih sebebi)
 
